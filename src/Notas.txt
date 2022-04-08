@@ -1,0 +1,19 @@
+const responseMock = {
+  // status: jest.fn().mockImplementation((resStatus) => {
+  //   console.log("resStatus => ", resStatus);
+  //   return resStatus;
+  // }),
+  status: jest.fn().mockReturnThis(),
+  // json: jest.fn().mockImplementation((resJson) => {
+  //   console.log("resJson => ", resJson);
+  //   return resJson;
+  // }),
+  json: jest.fn().mockReturnThis(),
+};
+
+// export function ApiOkeyResponse(
+//   res: Response,
+//   message?: { [key: string]: any }
+// ): any {
+//   return res.status(200).json(message);
+// }
